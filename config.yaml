@@ -1,0 +1,33 @@
+default_chain: stride-testnet
+chains:
+  gaia-testnet:
+    key: wallet
+    chain-id: GAIA
+    rpc-addr: http://185.16.38.223:26652      #  GAIA RPC endpoint
+    grpc-addr: http://185.16.38.223:9092     #   GAIA GRPC endpoint
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001uatom
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+  stride-testnet:
+    key: wallet
+    chain-id: STRIDE-TESTNET-4
+    rpc-addr: http://127.0.0.1:26659      #  Stride GRPC endpoint
+    grpc-addr: http://127.0.0.1:9090     #  Stride GRPC endpoint
+    account-prefix: stride
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001ustrd
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+cl: {}
